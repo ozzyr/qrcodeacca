@@ -44,7 +44,6 @@
 }
 .flex10-child:nth-child(3n+2) {
     order: 2;
-    background-image: url('.\assets\magno.png');
 }
 .flex10-child-2 {
     height: 250px;
