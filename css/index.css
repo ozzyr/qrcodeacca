@@ -22,7 +22,7 @@
     
     flex-wrap: wrap;
     align-items: center;
-    
+    width: 75%;
     margin-bottom: 2em;
     position: relative;
     max-width: 150vw;
@@ -38,7 +38,7 @@
     margin: 4px 5px 6px 6px;
     border-radius: 3px;
     cursor:pointer;
-    
+    box-shadow:  3px 3px #9039ac, 0em 1px 4em #80004d;
     
 }
 
@@ -63,41 +63,86 @@
  }
 .flex10-child-1 {
     background-image: url("./../assets/capaPoemaII.png");
-  
+    filter: grayscale(100%);
+    transition: all 0.5s;
 }
 .flex10-child-1:hover {
-    
-    background-image: url("./../assets/fundoTecido.png");
+    background-image: url("./../assets/capaPoemaII.png");
+    filter: grayscale(0%);
 }
 
 .flex10-child-2 {
     background-image: url("./../assets/capaPoemaI.jpg");
-  
+    filter: grayscale(100%);
+    transition: all 0.5s;
 }
 .flex10-child-2:hover {
-   background-image: url("./../assets/QRCodes/meireQR.png");
-   background-position: center;
-   background-size: contain;
-   background-origin: padding-box;
+    background-image: url("./../assets/capaPoemaI.jpg");
+    filter: grayscale(0%);
 }
 
 .flex10-child-3 {
     background-image: url("./../assets/marinana.png");
+    filter: grayscale(100%);
+    transition: all 0.5s;
+ 
 }
+.flex10-child-3:hover {
+    background-image: url("./../assets/marinana.png");
+    filter: grayscale(0%);
+}
+
 .flex10-child-4 {
     background-image: url("./../assets/nicoleCapa.png");
+    filter: grayscale(100%);
+    transition: all 0.5s;
+  
 }
+.flex10-child-4:hover {
+    background-image: url("./../assets/nicoleCapa.png");
+    filter: grayscale(0%);
+}
+
 .flex10-child-5 {
     background-image: url("./../assets/poder.png");
-
+    filter: grayscale(100%);
+    transition: all 0.5s;
 }
+.flex10-child-5:hover {
+    background-image: url("./../assets/poder.png");
+    filter: grayscale(0%);
+}
+
 .flex10-child-6 {
     background-image: url("./../assets/seaver.png");
+    filter: grayscale(100%);
+    transition: all 2s;
 }
+.flex10-child-6:hover {
+    background-image: url("./../assets/seaver.png");
+    filter: grayscale(0%);
+}  
+
 .flex10-child-7 {
     background-image: url("./../assets/wolf.png");
-
-}.flex10-child-8 {
-    background-image: url("./../assets/mariacapa.png");
-
+    filter: grayscale(100%);
+    transition: all 0.5s;
 }
+.flex10-child-7:hover {
+    background-image: url("./../assets/wolf.png");
+    filter: grayscale(0%);
+}  
+
+
+
+.flex10-child-8 {
+    background-image: url("./../assets/mariacapa.png");
+    filter: grayscale(100%);
+    transition: all 0.5s;
+}
+.flex10-child-8:hover {
+    background-image: url("./../assets/mariacapa.png");
+    filter: grayscale(0%);
+}  
+
+
