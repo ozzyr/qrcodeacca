@@ -25,7 +25,7 @@
     order: 1;
 }
 .flex10-child-1 {
-    height: 200px;
+    
 }
 .flex10-child {
     width: 32%;
@@ -36,6 +36,7 @@
     color: white;
 }
 .child {
+    height: 200px;
     border-radius: 3px;
     background-color: #A2CBFA;
     border: 1px solid #4390E1;
@@ -46,53 +47,55 @@
     order: 2;
 }
 .flex10-child-2 {
-    height: 250px;
+    
 }
 .flex10-child:nth-child(3n) {
     order: 3;
 }
 .flex10-child-3 {
-    height: 225px;
+    
 }
 .flex10-child:nth-child(3n+1) {
     order: 1;
 }
 .flex10-child-4 {
-    height: 100px;
+    
 }
 .flex10-child:nth-child(3n+2) {
     order: 2;
 }
 .flex10-child-5 {
-    height: 100px;
+    
+   
 }
 .flex10-child:nth-child(3n) {
     order: 3;
 }
 .flex10-child-6 {
-    height: 125px;
+    
 }
 .flex10-child:nth-child(3n+1) {
     order: 1;
 }
 .flex10-child-7 {
-    height: 100px;
+   
 }
 .flex10-child:nth-child(3n+2) {
     order: 2;
 }
 .flex10-child-8 {
-    height: 75px;
+    
 }
 .flex10-child:nth-child(3n) {
     order: 3;
 }
 .flex10-child-9 {
-    height: 100px;
+    
+    background-image: url(https://www.inglesnapontadalingua.com.br/wp-content/uploads/2009/05/eu-n%C3%A3o-ligo-em-ingles.jpg);
 }
 .flex10-child:nth-child(3n+1) {
     order: 1;
 }
 .flex10-child-10 {
-    height: 100px;
+    
 }
