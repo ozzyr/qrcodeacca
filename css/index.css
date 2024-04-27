@@ -36,12 +36,19 @@
     height: 30vh;
     justify-content: center; 
     margin: 4px 5px 6px 6px;
-    
     border-radius: 3px;
     cursor:pointer;
-    max-width: 22vw;
+    
     
 }
+
+@media (max-height: 740px) {
+    .child {
+       width: 30vw;
+       height: 18vh;
+    }
+}
+
 
  body, html{
     height: 100%;
@@ -74,13 +81,23 @@
    background-origin: padding-box;
 }
 
-
 .flex10-child-3 {
-
+    background-image: url("./../assets/marinana.png");
 }
 .flex10-child-4 {
-
+    background-image: url("./../assets/nicoleCapa.png");
 }
 .flex10-child-5 {
+    background-image: url("./../assets/poder.png");
+
+}
+.flex10-child-6 {
+    background-image: url("./../assets/seaver.png");
+}
+.flex10-child-7 {
+    background-image: url("./../assets/wolf.png");
+
+}.flex10-child-8 {
+    background-image: url("./../assets/mariacapa.png");
 
 }
