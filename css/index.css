@@ -62,12 +62,12 @@
     
  }
 .flex10-child-1 {
-    background-image: url("./../assets/capaPoemaII.png");
+    background-image: url("./../assets/fundo.jpg");
     filter: grayscale(100%);
     transition: all 0.5s;
 }
 .flex10-child-1:hover {
-    background-image: url("./../assets/capaPoemaII.png");
+    background-image: url("./../assets/fundo.jpg");
     filter: grayscale(0%);
 }
 
