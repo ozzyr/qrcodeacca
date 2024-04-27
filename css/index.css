@@ -1,101 +1,75 @@
-.post-content-wrapper {
-    padding: 20px;
-    margin-bottom: 2em;
-    position: relative;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f7f7f7;
-    border-radius: 7px;
-    box-sizing: border-box;
-}
-.flex10 {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: space-between;
-    height: 580px;
-}
 .flex {
-    background-color: #f7f7f7;
-    border-radius: 3px;
-    padding: 20px;
+   display: flex;
+   justify-content: center;
+  
+ 
 }
 
-.flex10-child:nth-child(3n+1) {
-    order: 1;
+.altura{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    background-color: aqua;
+
 }
-.flex10-child-1 {
+.container {
     
-}
-.flex10-child {
-    width: 32%;
-    margin-bottom: 2%;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    margin-bottom: 2em;
+    position: relative;
+    max-width: 150vw;
+  
+    background-color: #b53cda;
+    border-radius: 2px;
+    
 }
 .child {
-    height: 200px;
+    background-color: blueviolet;
+    width: 22vw;
+    height: 25vh;
+    justify-content: center; 
+    margin: 4px 5px 6px 6px;
+    border: 1px solid #ccc;
     border-radius: 3px;
-    background-color: #A2CBFA;
-    border: 1px solid #4390E1;
-    box-sizing: border-box;
-    box-shadow: 0 2px 2px rgba(0,90,250,0.05), 0 4px 4px rgba(0,90,250,0.05), 0 8px 8px rgba(0,90,250,0.05), 0 16px 16px rgba(0,90,250,0.05);
-}
-.flex10-child:nth-child(3n+2) {
-    order: 2;
-}
-.flex10-child-2 {
+    cursor:pointer;
+    max-width: 22vw;
     
 }
-.flex10-child:nth-child(3n) {
-    order: 3;
+
+ body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+ }
+ .baseMosaico {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+ }
+.flex10-child-1 {
+    background-image: url("./../assets/magno.png");
+  
+}
+.flex10-child-1:hover {
+    
+    background-image: url("./../assets/fundoTecido.png");
+}
+
+.flex10-child-2 {
+    background-image: url("./../assets/meire.png");
+  
+    
 }
 .flex10-child-3 {
-    
-}
-.flex10-child:nth-child(3n+1) {
-    order: 1;
+
 }
 .flex10-child-4 {
-    
-}
-.flex10-child:nth-child(3n+2) {
-    order: 2;
+
 }
 .flex10-child-5 {
-    
-   
-}
-.flex10-child:nth-child(3n) {
-    order: 3;
-}
-.flex10-child-6 {
-    
-}
-.flex10-child:nth-child(3n+1) {
-    order: 1;
-}
-.flex10-child-7 {
-   
-}
-.flex10-child:nth-child(3n+2) {
-    order: 2;
-}
-.flex10-child-8 {
-    
-}
-.flex10-child:nth-child(3n) {
-    order: 3;
-}
-.flex10-child-9 {
-    
-    background-image: url(https://www.inglesnapontadalingua.com.br/wp-content/uploads/2009/05/eu-n%C3%A3o-ligo-em-ingles.jpg);
-}
-.flex10-child:nth-child(3n+1) {
-    order: 1;
-}
-.flex10-child-10 {
-    
+
 }

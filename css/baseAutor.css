@@ -1,0 +1,45 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  border-radius: 4%;
+  margin-bottom: 20px;
+  box-shadow: 6px 8px 9px 4px rgb(11 12 1 / 77%);
+}
+
+.poema {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+audio {
+  width: 100%;
+}
