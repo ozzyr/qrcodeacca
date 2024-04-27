@@ -1,8 +1,7 @@
 .flex {
    display: flex;
    justify-content: center;
-  
- 
+   
 }
 
 .altura{
@@ -62,8 +61,14 @@
 .flex10-child-2 {
     background-image: url("./../assets/meire.png");
   
-    
 }
+.flex10-child-2:hover {
+   background-image: url("./../assets/QRCodes/meireQR.png");
+   background-position: center;
+   background-size: contain;
+}
+
+
 .flex10-child-3 {
 
 }
