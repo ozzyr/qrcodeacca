@@ -1,6 +1,6 @@
 function sendMeTo(page){
   if (page === 'cordas') {
-    window.location.href ="./cordas/cordas.html";
+    window.location.href ="./cordas/cordas.htm";
   } else {
     window.location.href =page+".html";
   }
