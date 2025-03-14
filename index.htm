@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href=".\css\index.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" media="screen" />
     <script src="./js/main.js"></script>
-    <title>mosaico</title>
+    <title>Menu Principal</title>
 </head>
 <body>
     <div class="flex altura">
-        <div class="flex container">
-          <div class="child flex10-child-1 baseMosaico" id="magnoQRC" onclick="sendMeTo('magno')"></div>
-          <div class="child flex10-child-2 baseMosaico" id="meire" onclick="sendMeTo('meire')"></div>
-          <div class="child flex10-child-3 baseMosaico" id="marilia" onclick="sendMeTo('marilia')" ></div>
-          <div class="child flex10-child-4 baseMosaico" id="nicole" onclick="sendMeTo('nicole')" ></div>
-          <div class="child flex10-child-5 baseMosaico" id="poder" onclick="sendMeTo('poder')" ></div>
-          <div class="child flex10-child-6 baseMosaico" id="seaver" onclick="sendMeTo('seaver')" ></div>
-          <div class="child flex10-child-7 baseMosaico" id="amarte" onclick="sendMeTo('amarte')" ></div>
-          <div class="child flex10-child-8 baseMosaico" id="maria" onclick="sendMeTo('maria')" ></div>
+        <div class="container column center">
+          <div class="child flex10-child-1 baseMosaico" id="cordas" onclick="sendMeTo('cordas')">Sistema de Cordas</div>
+          <div class="child flex10-child-2 baseMosaico" id="historias" onclick="goToHistorias()">Histórias</div>
         </div>
-      </div>
+    </div>
 </body>
 </html>

@@ -11,7 +11,7 @@
     height: 100%;
     align-items: center;
     flex-direction: column;
-    background-image:url("./../assets/fundoGlobal.png");
+    background-image:url("./../assets/bg.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,11 +22,9 @@
     
     flex-wrap: wrap;
     align-items: center;
-    width: 75%;
     margin-bottom: 2em;
     position: relative;
     max-width: 150vw;
-  
     border-radius: 2px;
     
 }
@@ -62,12 +60,12 @@
     
  }
 .flex10-child-1 {
-    background-image: url("./../assets/fundo.jpg");
-    filter: grayscale(100%);
+    background-image: url("./../assets/mold.webp");
+    
     transition: all 0.5s;
 }
 .flex10-child-1:hover {
-    background-image: url("./../assets/fundo.jpg");
+    background-image: url("./../assets/v1.jpg");
     filter: grayscale(0%);
 }
 

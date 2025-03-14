@@ -1,4 +1,11 @@
-
 function sendMeTo(page){
-  window.location.href ="./autores/"+page+".htm"
+  if (page === 'cordas') {
+    window.location.href ="./cordas/cordas.html";
+  } else {
+    window.location.href =page+".html";
+  }
+}
+
+function goToHistorias(){
+  window.location.href ="./historias/index.htm";
 }

@@ -1,0 +1,136 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: QuickSand, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f2e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.6em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d97d22;
+    font-family: adelia, Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.cordas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.corda {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.corda:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.corda h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: adelia, Arial, sans-serif;
+}
+
+.corda p {
+    margin: 0;
+    font-family: QuickSand, Arial, sans-serif;
+}
+
+/* Cores das cordas */
+.bege {
+    background-color: #f5e8d0;
+    color: #333;
+}
+
+.amarelo {
+    background-color: #ffd966;
+    color: #333;
+}
+
+.laranja {
+    background-color: #f4b183;
+    color: #333;
+}
+
+.azul {
+    background-color: #9cc3e5;
+    color: #333;
+}
+
+.verde {
+    background-color: #a8d08d;
+    color: #333;
+}
+
+.roxo {
+    background-color: #b4a7d6;
+    color: #333;
+}
+
+.marrom {
+    background-color: #c09a6b;
+    color: #fff;
+}
+
+.vermelho {
+    background-color: #e57373;
+    color: #fff;
+}
+
+.branco {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.voltar-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #d97d22;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: QuickSand, Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+
+.voltar-btn:hover {
+    background-color: #b86a1c;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url("./../assets/fonte/Quicksand_Book.otf");
+}
+
+@font-face {
+    font-family: adelia;
+    src: url("./../assets/fonte/adelia.ttf");
+} 

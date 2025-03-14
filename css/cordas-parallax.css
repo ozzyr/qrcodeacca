@@ -1,0 +1,696 @@
+/* Fontes */
+@font-face {
+    font-family: QuickSand;
+    src: url("./../assets/fonte/Quicksand_Book.otf");
+}
+
+@font-face {
+    font-family: adelia;
+    src: url("./../assets/fonte/adelia.ttf");
+}
+
+/* Reset e estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: QuickSand, Arial, sans-serif;
+    background-color: #f9f2e0;
+    color: #333;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Cabeçalho e introdução */
+.intro-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9f2e0;
+    background-image: url('./../assets/bg.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.intro-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(249, 242, 224, 0.85);
+    z-index: 1;
+}
+
+.intro-section h1, .intro-section p {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #d97d22;
+    font-family: adelia, Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+/* Títulos de seção */
+.section-title {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #d97d22;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.section-title h2 {
+    font-family: adelia, Arial, sans-serif;
+    font-size: 2.2em;
+}
+
+/* Seções Parallax */
+.parallax-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Caixas de conteúdo */
+.content-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    transform: translateY(0);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.content-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.content-box h3 {
+    font-family: adelia, Arial, sans-serif;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #d97d22;
+}
+
+.content-box p {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.content-box.reveal,
+.content-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Cores de fundo para cada graduação - Infantojuvenil */
+.crua-infantil {
+    background-color: #f5e8d0; /* Bege claro */
+    background-image: url('./../assets/mold.webp');
+    background-attachment: fixed;
+}
+
+.crua-amarela-infantil {
+    background-image: linear-gradient(to right, #f5e8d0 50%, #ffd966 50%);
+    background-image: url('./../assets/mold.webp');
+    background-attachment: fixed;
+}
+
+.crua-laranja-infantil {
+    background-image: linear-gradient(to right, #f5e8d0 50%, #f4b183 50%);
+    background-image: url('./../assets/mold.webp');
+    background-attachment: fixed;
+}
+
+.crua-azul-infantil {
+    background-image: linear-gradient(to right, #f5e8d0 50%, #9cc3e5 50%);
+    background-image: url('./../assets/mold.webp');
+    background-attachment: fixed;
+}
+
+.crua-verde-infantil {
+    background-image: linear-gradient(to right, #f5e8d0 50%, #a8d08d 50%);
+    background-image: url('./../assets/mold.webp');
+    background-attachment: fixed;
+}
+
+.crua-roxa-infantil {
+    background-image: linear-gradient(to right, #f5e8d0 50%, #b4a7d6 50%);
+    background-image: url('./../assets/mold.webp');
+    background-attachment: fixed;
+}
+
+/* Cores de fundo para cada graduação - Adulto */
+.crua-adulto {
+    background-color: #f5e8d0; /* Bege claro */
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.crua-amarela-adulto {
+    background-image: linear-gradient(to right, #f5e8d0 50%, #ffd966 50%);
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.amarela {
+    background-color: #ffd966; /* Amarelo */
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.amarela-laranja {
+    background-image: linear-gradient(to right, #ffd966 50%, #f4b183 50%);
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.laranja {
+    background-color: #f4b183; /* Laranja */
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+/* Novas cordas adicionadas */
+.laranja-azul {
+    background-image: linear-gradient(to right, #f4b183 50%, #9cc3e5 50%);
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.azul {
+    background-color: #9cc3e5; /* Azul */
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.azul-verde {
+    background-image: linear-gradient(to right, #9cc3e5 50%, #a8d08d 50%);
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.verde {
+    background-color: #a8d08d; /* Verde */
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.verde-roxa {
+    background-image: linear-gradient(to right, #a8d08d 50%, #b4a7d6 50%);
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.roxa {
+    background-color: #b4a7d6; /* Roxa */
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.roxa-marrom {
+    background-image: linear-gradient(to right, #b4a7d6 50%, #8b4513 50%);
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.marrom {
+    background-color: #8b4513; /* Marrom */
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.marrom-vermelha {
+    background-image: linear-gradient(to right, #8b4513 50%, #e63946 50%);
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.vermelha {
+    background-color: #e63946; /* Vermelho */
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.vermelha-branca {
+    background-image: linear-gradient(to right, #e63946 50%, #ffffff 50%);
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+.branca {
+    background-color: #ffffff; /* Branco */
+    background-image: url('./../assets/mold2.webp');
+    background-attachment: fixed;
+}
+
+/* Efeito Parallax para cada seção */
+.parallax-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+/* Cores específicas para cada tipo de corda */
+.crua-infantil::after,
+.crua-adulto::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #f5e8d0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.crua-amarela-infantil::after,
+.crua-amarela-adulto::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to right, #f5e8d0 50%, #ffd966 50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.crua-laranja-infantil::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to right, #f5e8d0 50%, #f4b183 50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.crua-azul-infantil::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to right, #f5e8d0 50%, #9cc3e5 50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.crua-verde-infantil::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to right, #f5e8d0 50%, #a8d08d 50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.crua-roxa-infantil::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to right, #f5e8d0 50%, #b4a7d6 50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.amarela::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #ffd966;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.amarela-laranja::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to right, #ffd966 50%, #f4b183 50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.laranja::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #f4b183;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* Cores específicas para cada tipo de corda - Novas cordas */
+.laranja-azul::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to right, #f4b183 50%, #9cc3e5 50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.azul::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #9cc3e5;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.azul-verde::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to right, #9cc3e5 50%, #a8d08d 50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.verde::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #a8d08d;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.verde-roxa::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to right, #a8d08d 50%, #b4a7d6 50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.roxa::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #b4a7d6;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.roxa-marrom::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to right, #b4a7d6 50%, #8b4513 50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.marrom::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #8b4513;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.marrom-vermelha::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to right, #8b4513 50%, #e63946 50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.vermelha::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #e63946;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.vermelha-branca::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to right, #e63946 50%, #ffffff 50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.branca::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #ffffff;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* Rodapé */
+.footer {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #d97d22;
+}
+
+.voltar-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #d97d22;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: QuickSand, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.voltar-btn:hover {
+    background-color: #f5e8d0;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Botões de navegação */
+.section-nav {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 10;
+}
+
+.nav-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    color: #d97d22;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #d97d22;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .parallax-section {
+        background-attachment: scroll; /* Desativa o efeito parallax em dispositivos móveis */
+    }
+    
+    .content-box {
+        max-width: 90%;
+        padding: 25px;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    .intro-text {
+        font-size: 1.1em;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8em;
+    }
+    
+    .content-box h3 {
+        font-size: 1.8em;
+    }
+    
+    .content-box p {
+        font-size: 1.1em;
+    }
+    
+    .section-nav {
+        right: 15px;
+    }
+    
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .intro-text {
+        font-size: 1em;
+    }
+    
+    .section-title h2 {
+        font-size: 1.5em;
+    }
+    
+    .content-box {
+        padding: 20px;
+    }
+    
+    .content-box h3 {
+        font-size: 1.5em;
+    }
+    
+    .content-box p {
+        font-size: 1em;
+    }
+    
+    .voltar-btn {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+    
+    .section-nav {
+        right: 10px;
+    }
+    
+    .nav-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
+    }
+} 

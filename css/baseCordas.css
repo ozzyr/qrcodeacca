@@ -27,6 +27,43 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.carousel {
+  width: 90vw;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  /* use this property to hide the scrollbar on firefox */
+  scrollbar-width: none;
+}
+/*  use this pseudo class to hide the scrollbar on chrome */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.item {
+  flex-basis: 20%;
+  flex-shrink: 0;
+  padding: 1rem;
+}
+.left,
+.right {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: brown;
+  font-size: 5rem;
+  overflow: hidden;
+  z-index: 100;
+}
+img {
+  width: 100%;
+
+}
+
 
 
 @font-face {
@@ -61,7 +98,6 @@ body {
   src: url("./../assets/fonte/culturescarnival-regular.otf");
 }
 
-
 img {
   width: 200px;
   height: auto;
@@ -75,7 +111,7 @@ h1 {
   text-align: center;
   margin-bottom: 10px;
   color: #f9f2e0;
-  font-family: carnivaler;
+  font-family: adelia;
   text-shadow:  5px -8px 5px #311900
 }
 

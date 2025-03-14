@@ -1,0 +1,32 @@
+/* Definição das cores das cordas */
+.corda-verde {
+  background-color: #008000;
+}
+
+.corda-amarelo {
+  background-color: #FFFF00;
+}
+
+.corda-azul {
+  background-color: #0000FF;
+}
+
+.corda-laranja {
+  background-color: #FFA500;
+}
+
+.corda-roxo {
+  background-color: #800080;
+}
+
+.corda-marrom {
+  background-color: #A52A2A;
+}
+
+.corda-vermelho {
+  background-color: #FF0000;
+}
+
+.corda-branco {
+  background-color: #FFFFFF;
+} 
