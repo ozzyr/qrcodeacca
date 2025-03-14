@@ -134,3 +134,12 @@ h1 {
     font-family: adelia;
     src: url("./../assets/fonte/adelia.ttf");
 } 
+@font-face {
+    font-family: carnivale;
+    src: url("./../assets/fonte/culturescarnival-rough.otf");
+}
+
+@font-face {
+    font-family: carnivaler;
+    src: url("./../assets/fonte/culturescarnival-regular.otf");
+}
