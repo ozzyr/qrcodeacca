@@ -42,11 +42,14 @@
 @media (max-width: 768px) {
     .container {
         position: fixed;
-        bottom: 2rem;
+        bottom: 50%;
+        transform: translateY(50%);
         left: 0;
         right: 0;
         padding: 1rem;
-        justify-content: space-around;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
     .child {

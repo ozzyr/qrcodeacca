@@ -625,26 +625,33 @@ h1 {
     .content-box {
         max-width: 90%;
         padding: 25px;
+        margin: 0 auto;
     }
     
     h1 {
         font-size: 2.2em;
+        text-align: center;
     }
     
     .intro-text {
         font-size: 1.1em;
+        text-align: center;
+        padding: 0 15px;
     }
     
     .section-title h2 {
         font-size: 1.8em;
+        text-align: center;
     }
     
     .content-box h3 {
         font-size: 1.8em;
+        text-align: center;
     }
     
     .content-box p {
         font-size: 1.1em;
+        text-align: center;
     }
     
     .section-nav {
@@ -656,6 +663,15 @@ h1 {
         height: 40px;
         font-size: 1.2em;
     }
+    
+    .intro-section {
+        padding: 60px 15px;
+    }
+    
+    .footer {
+        padding: 30px 15px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -665,6 +681,7 @@ h1 {
     
     .intro-text {
         font-size: 1em;
+        padding: 0 10px;
     }
     
     .section-title h2 {
@@ -673,6 +690,7 @@ h1 {
     
     .content-box {
         padding: 20px;
+        max-width: 95%;
     }
     
     .content-box h3 {
@@ -686,6 +704,9 @@ h1 {
     .voltar-btn {
         padding: 12px 24px;
         font-size: 1em;
+        margin: 0 auto;
+        display: block;
+        width: fit-content;
     }
     
     .section-nav {
