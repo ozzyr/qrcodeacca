@@ -1,3 +1,4 @@
+@import url(fonts.css);
 
 html {
   margin: 0;
@@ -26,44 +27,6 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
-
-@font-face {
-  font-family: Zapy;
-  src: url("./../assets/fonte/ZapfChanceryFont.otf");
-
-}
-@font-face {
-  font-family: daylove;
-  src: url("./../assets/fonte/Daylove_DEMO.ttf");
-
-}
-@font-face {
-  font-family: QuickSand;
-  src: url("./../assets/fonte/Quicksand_Book.otf");
-}
-@font-face {
-  font-family: adelia;
-  src: url("./../assets/fonte/adelia.ttf");
-}
-@font-face {
-  font-family: adeliao;
-  src: url("./../assets/fonte/adelia.otf");
-}
-@font-face {
-  font-family: carnivale;
-  src: url("./../assets/fonte/culturescarnival-rough.otf");
-}
-
-@font-face {
-  font-family: carnivaler;
-  src: url("./../assets/fonte/culturescarnival.otf");
-}
-
-
-
-
 
 img {
   width: 200px;

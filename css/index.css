@@ -30,7 +30,7 @@
     height: 200px;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 9px 11px 25px -3px #6439db, 0em 1px 4em #04fc88;
+    box-shadow: 9px 11px 25px -3px #6439db, 0em 2px 4em #04fc88;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,9 +61,12 @@ body, html{
     padding: 0;
  }
  .baseMosaico {
+    background-blend-mode: lighten;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 85%;
+    
     
  }
 .flex10-child-1 {
@@ -75,7 +78,8 @@ body, html{
 .flex10-child-1:hover {
     filter: grayscale(0%);
     background-image: url("./../assets/menu_01.webp");
-        transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 100%;
 }
 
 
@@ -87,6 +91,8 @@ body, html{
 .flex10-child-2:hover {
     background-image: url("./../assets/menu_02.webp");
     filter: grayscale(0%);
+    opacity: 100%;
+
 }
 
 

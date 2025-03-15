@@ -1,3 +1,5 @@
+@import url(fonts.css);
+
 html {
     margin: 0;
     padding: 0;
@@ -125,21 +127,3 @@ h1 {
     background-color: #b86a1c;
 }
 
-@font-face {
-    font-family: QuickSand;
-    src: url("./../assets/fonte/Quicksand_Book.otf");
-}
-
-@font-face {
-    font-family: adelia;
-    src: url("./../assets/fonte/adelia.ttf");
-} 
-@font-face {
-    font-family: carnivale;
-    src: url("./../assets/fonte/culturescarnival-rough.otf");
-}
-
-@font-face {
-    font-family: carnivaler;
-    src: url("./../assets/fonte/culturescarnival-regular.otf");
-}
