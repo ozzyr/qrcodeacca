@@ -7,10 +7,11 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     align-items: center;
     flex-direction: column;
     background-color: #f9f2e0;
+    background-image: linear-gradient(135deg, rgba(0, 128, 0, 0.1), rgba(102, 28, 169, 0.1));
 }
 
 .container {
@@ -24,6 +25,10 @@
     border-radius: 2px;
 }
 
+.column {
+    flex-direction: row;
+}
+
 .child {
     width: 200px;
     height: 250px;
@@ -33,6 +38,14 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.child:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    border: 2px solid #661ca9;
 }
 
 .nome-pessoa {
@@ -40,7 +53,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.7);
+    background: linear-gradient(to right, #008000, #661ca9);
     color: white;
     padding: 10px;
     text-align: center;
@@ -60,7 +73,7 @@ h1 {
     font-size: 2.6em;
     text-align: center;
     margin: 30px 0;
-    color: #d97d22;
+    color: #661ca9;
     font-family: adelia, Arial, sans-serif;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
@@ -72,6 +85,8 @@ h1 {
     justify-content: center;
     padding: 15px;
     transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
 }
 
 .baseMosaico:hover {
@@ -108,17 +123,22 @@ h1 {
 .voltar-btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #d97d22;
+    margin-bottom: 30px;
+    padding: 12px 24px;
+    background: linear-gradient(to right, #008000, #661ca9);
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-family: QuickSand, Arial, sans-serif;
-    transition: background-color 0.3s;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .voltar-btn:hover {
-    background-color: #b86a1c;
+    background: linear-gradient(to right, #661ca9, #008000);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
 @font-face {
@@ -141,23 +161,28 @@ h1 {
     src: url("./../assets/fonte/culturescarnival-regular.otf");
 }
 
-
-
 /* Adicionando estilo para as miniaturas de fotos no menu */
 .pessoa-thumb {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   margin-bottom: 10px;
+  transition: all 0.3s ease;
 } 
+
+.child:hover .pessoa-thumb {
+  border-color: #661ca9;
+  transform: scale(1.1);
+}
 
 /* Media queries para dispositivos móveis */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 1rem;
@@ -168,7 +193,7 @@ h1 {
   .child {
     width: 180px;
     height: 220px;
-    margin: 10px 0;
+    margin: 10px;
   }
   
   h1 {
@@ -182,18 +207,41 @@ h1 {
   }
   
   .pessoa-thumb {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
   }
 }
 
 @media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  
   .child {
-    width: 160px;
-    height: 200px;
+    width: 85%;
+    height: 180px;
+    margin: 10px 0;
+    max-width: 300px;
   }
   
   h1 {
     font-size: 1.8em;
+    padding: 0 10px;
+  }
+  
+  .pessoa-thumb {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .nome-pessoa {
+    font-size: 1.1em;
+  }
+  
+  .voltar-btn {
+    padding: 10px 20px;
+    font-size: 0.9em;
   }
 } 
