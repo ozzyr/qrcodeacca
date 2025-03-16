@@ -1,0 +1,33 @@
+/* Estilos específicos para a página da Dandara */
+.container {
+  border-left: 5px solid #661ca9;
+  border-right: 5px solid #008000;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #661ca9, -2px -2px 4px #008000;
+}
+
+img {
+  border: 3px solid #661ca9;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  border-color: #008000;
+}
+
+.poema p {
+  border-left: 3px solid #661ca9;
+  padding-left: 15px;
+}
+
+.voltar-btn {
+  background: linear-gradient(to right, #661ca9, #008000);
+}
+
+.voltar-btn:hover {
+  background: linear-gradient(to right, #008000, #661ca9);
+} 

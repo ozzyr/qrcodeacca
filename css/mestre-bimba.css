@@ -1,0 +1,34 @@
+/* Estilos específicos para a página do Mestre Bimba */
+.container {
+  border-top: 5px solid #008000;
+  border-bottom: 5px solid #661ca9;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #008000, -2px -2px 4px #661ca9;
+}
+
+img {
+  border: 3px solid #008000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  border-color: #661ca9;
+  box-shadow: 0 0 15px rgba(102, 28, 169, 0.7);
+}
+
+.poema p {
+  border-right: 3px solid #008000;
+  padding-right: 15px;
+}
+
+.voltar-btn {
+  background: linear-gradient(to right, #008000, #661ca9);
+}
+
+.voltar-btn:hover {
+  background: linear-gradient(to right, #661ca9, #008000);
+} 

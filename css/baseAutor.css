@@ -10,22 +10,23 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f2e0;
+  background: linear-gradient(135deg, #008000 0%, #661ca9 100%);
   display: flex;
   justify-content: center;
   align-items: center;
-    flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
-  
   text-align: center;
   max-width: 800px;
   margin: 25px 2px 2px 2px;
-  background-color: #d97d22;
+  background: linear-gradient(to right, rgba(102, 28, 169, 0.9), rgba(0, 128, 0, 0.9));
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ffffff;
 }
 
 img {
@@ -34,48 +35,92 @@ img {
   border-radius: 4%;
   margin-bottom: 20px;
   box-shadow: 6px 8px 9px 4px rgb(11 12 1 / 77%);
+  border: 3px solid #008000;
 }
 
 h1 {
   font-size: 2.6em;
   text-align: center;
   margin-bottom: 10px;
-  color: #f9f2e0;
+  color: #ffffff;
   font-family: carnivaler;
-  text-shadow:  5px -8px 5px #311900
+  text-shadow: 3px 3px 5px #000000;
 }
 
 h2 {
   font-family: adelia;
   text-align: center;
-  text-shadow:  -1px 2px 2px #311900
+  color: #ffffff;
+  text-shadow: 2px 2px 3px #000000;
 }
 .poema {
-  padding: 20px 20px 20px 20px ;
+  padding: 20px 20px 20px 20px;
   font-family: QuickSand;
   font-size: 18px;
   line-height: 1.6;
-  color: #f3e7c7;
+  color: #ffffff;
   text-align: justify;
-  text-shadow:  -1px 2px 2px #311900;
-  
+  text-shadow: 1px 1px 2px #000000;
 }
 .amarte {
-  
-  text-shadow:  -1px 2px 2px #311900;
-  padding: 20px 20px 20px 20px ;
+  text-shadow: 1px 1px 2px #000000;
+  padding: 20px 20px 20px 20px;
   font-family: QuickSand;
   font-size: 18px;
   line-height: 1.6;
-  color: #f3e7c7;
+  color: #ffffff;
   text-align: center;
 }
 span{
-  color: #caff00 ;
+  color: #caff00;
 }
 
 audio {
   width: 100%;
+  margin-bottom: 20px;
+}
+
+.voltar-btn {
+  display: inline-block;
+  background: linear-gradient(to right, #008000, #661ca9);
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: QuickSand, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 2px solid white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.voltar-btn:before {
+  content: "←";
+  margin-right: 8px;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.voltar-btn:hover {
+  background: linear-gradient(to right, #661ca9, #008000);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.voltar-btn:hover:before {
+  transform: translateX(-4px);
+}
+
+.voltar-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Media queries para dispositivos móveis */
@@ -97,6 +142,13 @@ audio {
   .poema, .amarte {
     font-size: 16px;
     padding: 15px;
+  }
+  
+  .voltar-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 80%;
+    max-width: 300px;
   }
 }
 
@@ -121,5 +173,12 @@ audio {
   .poema, .amarte {
     font-size: 15px;
     padding: 10px;
+  }
+  
+  .voltar-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+    width: 90%;
+    max-width: 250px;
   }
 }

@@ -1,0 +1,45 @@
+/* Estilos específicos para a página do Mestre Pastinha */
+.container {
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #008000, #661ca9) 1;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #661ca9, -2px -2px 4px #008000;
+  position: relative;
+}
+
+h1:after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to right, #008000, #661ca9);
+  margin: 10px auto;
+}
+
+img {
+  border: 3px solid;
+  border-image: linear-gradient(to right, #008000, #661ca9) 1;
+  transition: all 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 128, 0, 0.6);
+}
+
+.poema p {
+  border-bottom: 2px solid #008000;
+  border-top: 2px solid #661ca9;
+  padding: 15px 0;
+}
+
+.voltar-btn {
+  background: linear-gradient(45deg, #008000, #661ca9);
+}
+
+.voltar-btn:hover {
+  background: linear-gradient(45deg, #661ca9, #008000);
+} 
